@@ -4,5 +4,40 @@
   "buildCommand": null,
   "installCommand": null,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "cv-imersao-2.vercel.app"
+        }
+      ],
+      "destination": "https://cv-nmcp.vercel.app/:path*",
+      "statusCode": 308
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "cv-imersao-2-noemi-provvidenti-s-projects.vercel.app"
+        }
+      ],
+      "destination": "https://cv-nmcp.vercel.app/:path*",
+      "statusCode": 308
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "cv-imersao-2-git-main-noemi-provvidenti-s-projects.vercel.app"
+        }
+      ],
+      "destination": "https://cv-nmcp.vercel.app/:path*",
+      "statusCode": 308
+    }
+  ]
 }
